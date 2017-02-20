@@ -1,0 +1,16 @@
+sudo apt-get install xsel
+sudo apt-get install git
+git config --global user.email "kuroosefujii@gmail.com"
+git config --global user.name "Takuto"
+git config --global color.ui auto
+ssh-keygen -t rsa -C 'kurosefujii@gmail.com'  
+cat ~/.ssh/id_rsa.pub | xsel -bi
+ssh -T git@github.com
+mkdir gittest
+cd gittest
+git init
+echo "# gittest" >> README.md
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:KuroseFujii/gittest2.git
+git push -u origin master
