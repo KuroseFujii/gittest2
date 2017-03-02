@@ -6,8 +6,8 @@ import numpy as np
 import numpy.linalg as LA
 
 # 画像読み込み
-img1_path = "s_test1.jpg"
-img2_path = "s_test2.jpg" 
+img1_path = "panorama1.jpg"
+img2_path = "panorama2.jpg" 
 img1 = cv2.imread(img1_path)
 img2 = cv2.imread(img2_path)
 gray1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
